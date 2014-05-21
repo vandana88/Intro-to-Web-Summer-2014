@@ -77,3 +77,11 @@ Students should understand the following:
 - [The Difference Between Block And Inline](http://www.impressivewebs.com/difference-block-inline-css/)
 - [VIDEO: Block Vs. Inline Elements](https://www.youtube.com/watch?v=XwF-14Z4Q5M)
 - [CSS Block Vs. Inline](http://webdesignfromscratch.com/html-css/css-block-and-inline/)
+ 
+Homework
+========
+Create a webpage
+ - Include a header
+ - Include a main content area
+ - Include a "hero" image, with absolutly positioned elements on top
+ - Include a footer
