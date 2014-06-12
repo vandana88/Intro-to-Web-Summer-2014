@@ -1,0 +1,489 @@
+1
+00:00:00,580 --> 00:00:03,800
+We've learned the basic syntax of CSS.
+
+2
+00:00:03,800 --> 00:00:07,610
+Now, let's build on that knowledge and
+style our project.
+
+3
+00:00:07,610 --> 00:00:13,490
+As we move forward, we'll learn about lots
+of selectors, properties, and values.
+
+4
+00:00:13,490 --> 00:00:16,870
+To start out, we'll style the basic
+elements of our site.
+
+5
+00:00:18,820 --> 00:00:20,970
+If you were following along with our
+previous
+
+6
+00:00:20,970 --> 00:00:25,880
+example, let's delete the style element
+that we created,
+
+7
+00:00:25,880 --> 00:00:29,620
+because it was only for the purposes of
+the example.
+
+8
+00:00:29,620 --> 00:00:32,990
+We won't need that code in our actual
+project.
+
+9
+00:00:32,990 --> 00:00:35,595
+Next let's create a stylesheet.
+
+10
+00:00:36,960 --> 00:00:41,540
+So we'll create a new file by right
+clicking on the file tree.
+
+11
+00:00:41,540 --> 00:00:45,030
+And we'll call it main.css.
+
+12
+00:00:45,030 --> 00:00:47,950
+But you can call yours whatever you'd
+like.
+
+13
+00:00:47,950 --> 00:00:51,060
+As long as it has the .css file
+
+14
+00:00:51,060 --> 00:00:53,750
+extension and you remember what you called
+it.
+
+15
+00:00:55,110 --> 00:00:59,850
+Now, once I create the file, you'll notice
+that it automatically opens it up for me.
+
+16
+00:00:59,850 --> 00:01:02,650
+But first, we need to move this into our
+CSS
+
+17
+00:01:02,650 --> 00:01:07,660
+directory, so I'm going to click and drag
+it into CSS.
+
+18
+00:01:07,660 --> 00:01:09,130
+There we go.
+
+19
+00:01:09,130 --> 00:01:13,510
+And before we get started coding over here
+in main.css,
+
+20
+00:01:13,510 --> 00:01:16,730
+we want to make sure that we add this to
+
+21
+00:01:16,730 --> 00:01:21,488
+our HTML file.
+So, this is going to be very similar to
+
+22
+00:01:21,488 --> 00:01:27,150
+our previous line of CSS.
+I'm going to copy that and paste it below,
+
+23
+00:01:27,150 --> 00:01:33,643
+so I've copied the normalize.css line
+here, and I've pasted it below.
+
+24
+00:01:33,643 --> 00:01:40,449
+And I need to change the filename here to
+main.css.
+
+25
+00:01:40,449 --> 00:01:42,273
+And I'm going to go ahead and
+
+26
+00:01:42,273 --> 00:01:47,112
+save that.
+Because of the cascading nature of CSS,
+
+27
+00:01:47,112 --> 00:01:52,348
+it's important that our CSS, or main.css,
+comes
+
+28
+00:01:52,348 --> 00:01:57,353
+after normalize.css.
+We don't want normalize
+
+29
+00:01:57,353 --> 00:02:02,408
+to overwrite any of our CSS.
+And conversely, we want
+
+30
+00:02:02,408 --> 00:02:07,400
+to make sure that normalize comes first
+and sets up a solid
+
+31
+00:02:07,400 --> 00:02:12,987
+foundation for our custom CSS.
+In fact, we might be overriding
+
+32
+00:02:12,987 --> 00:02:18,920
+some rules in normalize.css.
+So we want main to come after normalize.
+
+33
+00:02:18,920 --> 00:02:20,510
+That's very important.
+
+34
+00:02:20,510 --> 00:02:27,040
+Now let's jump into our CSS document,
+which I've called main.css.
+
+35
+00:02:27,040 --> 00:02:32,470
+And let's try a really dramatic and
+obvious change, just to make sure
+
+36
+00:02:32,470 --> 00:02:35,810
+that our CSS is included properly.
+
+37
+00:02:35,810 --> 00:02:41,730
+I'm going to select the body element,
+which is basically the entire page,
+
+38
+00:02:41,730 --> 00:02:47,870
+and I'm going to change the background
+color to orange.
+
+39
+00:02:47,870 --> 00:02:53,030
+So, I'll type background-color and change
+it to orange.
+
+40
+00:02:53,030 --> 00:02:57,502
+If we save the file and refresh our
+preview, you can
+
+41
+00:02:57,502 --> 00:03:03,821
+see that the background for the entire
+page has been changed to orange.
+
+42
+00:03:03,821 --> 00:03:12,190
+So we know that main.css has indeed been
+included properly into our HTML file.
+
+43
+00:03:13,210 --> 00:03:16,150
+If, for some reason, your background color
+doesn't change
+
+44
+00:03:16,150 --> 00:03:21,380
+to orange, make sure to first check the
+syntax here.
+
+45
+00:03:21,380 --> 00:03:22,730
+And then also check
+
+46
+00:03:22,730 --> 00:03:27,990
+to make sure that main.css comes after
+normalize, and
+
+47
+00:03:27,990 --> 00:03:33,263
+that the path is correct.
+It needs to be the CSS folder
+
+48
+00:03:33,263 --> 00:03:37,861
+and then main.css, and your main.css file
+
+49
+00:03:37,861 --> 00:03:43,030
+needs to be inside the CSS folder.
+It's very important
+
+50
+00:03:43,030 --> 00:03:47,830
+as well.
+Now, I don't want my body background color
+
+51
+00:03:47,830 --> 00:03:53,090
+to be orange, so I've highlighted
+everything by hitting Cmd+A on a Mac,
+
+52
+00:03:53,090 --> 00:03:58,500
+or Ctrl+A if you're on Windows, and I'll
+delete everything in the file.
+
+53
+00:03:58,500 --> 00:04:02,110
+Now, I want to remove the underline that's
+on our
+
+54
+00:04:02,110 --> 00:04:06,300
+links, I want to have links that don't
+have an underline.
+
+55
+00:04:06,300 --> 00:04:13,212
+So I'm going to select all of the anchor
+elements on our page, and I'm going
+
+56
+00:04:13,212 --> 00:04:18,533
+to type the property text-decoration and
+set it to none.
+
+57
+00:04:18,533 --> 00:04:22,970
+And if I save that, go back to the
+browser, and refresh.
+
+58
+00:04:22,970 --> 00:04:26,270
+You'll see that first, our background
+color has, once again, defaulted
+
+59
+00:04:26,270 --> 00:04:31,640
+to white, and there are no longer any
+underlines on our links.
+
+60
+00:04:31,640 --> 00:04:35,980
+Great, now let's start organizing our
+layout a little bit.
+
+61
+00:04:35,980 --> 00:04:38,630
+We need to add some markup in order
+
+62
+00:04:38,630 --> 00:04:43,880
+to wrap the main part of our content and
+select it appropriately.
+
+63
+00:04:43,880 --> 00:04:49,200
+To do that, we're first going to switch
+back over to our HTML and create an
+
+64
+00:04:49,200 --> 00:04:55,300
+element called a div, which doesn't have
+any semantic meaning at all.
+
+65
+00:04:55,300 --> 00:05:01,380
+Rather it's a way for us to encapsulate or
+divide a group of elements.
+
+66
+00:05:01,380 --> 00:05:03,760
+Let's open our div right
+
+67
+00:05:03,760 --> 00:05:09,980
+after our header element.
+So we'll go here, in between
+
+68
+00:05:09,980 --> 00:05:16,100
+our header and section, we'll type div,
+and then we're going to close this
+
+69
+00:05:18,250 --> 00:05:23,340
+just between our footer and body here.
+And you'll notice that work spaces has
+
+70
+00:05:23,340 --> 00:05:28,070
+actually highlighted body and html in red.
+That's because it's
+
+71
+00:05:28,070 --> 00:05:33,800
+saying, somewhere in here, there's a tag
+that is not closed.
+
+72
+00:05:33,800 --> 00:05:36,809
+And in our case, that's the div.
+
+73
+00:05:36,809 --> 00:05:41,950
+And if we type that in, you'll see that it
+automatically closes for us.
+
+74
+00:05:41,950 --> 00:05:43,300
+Now we have a lot
+
+75
+00:05:43,300 --> 00:05:47,730
+of code that needs to be indented by one
+tab.
+
+76
+00:05:47,730 --> 00:05:54,440
+So, starting at the footer down here at
+the bottom, going all the way up
+
+77
+00:05:54,440 --> 00:06:01,630
+to my section here, just before this dig.
+I'm going to select everything.
+
+78
+00:06:01,630 --> 00:06:06,010
+And to do that, I just hold down Shift and
+click right here.
+
+79
+00:06:06,010 --> 00:06:09,017
+Then again, to indent on a Mac, I'm
+
+80
+00:06:09,017 --> 00:06:13,910
+going to hit Cmd and then closing square
+bracket.
+
+81
+00:06:13,910 --> 00:06:17,780
+And on Windows, you hit Ctrl and square
+
+82
+00:06:17,780 --> 00:06:21,460
+bracket, and that will indent everything
+by one.
+
+83
+00:06:21,460 --> 00:06:25,440
+So now it's indented by one tab over from
+our
+
+84
+00:06:25,440 --> 00:06:28,670
+div, and that will help to keep our code
+organized.
+
+85
+00:06:28,670 --> 00:06:30,650
+You'll notice that we also have some more
+
+86
+00:06:30,650 --> 00:06:34,020
+line wrapping going on here, but that's
+perfectly fine,
+
+87
+00:06:34,020 --> 00:06:37,030
+that doesn't effect the functionality of
+the code.
+
+88
+00:06:37,030 --> 00:06:40,490
+Now, we will probably have many divs on
+the page, so
+
+89
+00:06:40,490 --> 00:06:46,450
+we need to identify this div more
+specifically according to its function.
+
+90
+00:06:46,450 --> 00:06:53,170
+So inside of our opening div tag right
+here, I'm going to type a space,
+
+91
+00:06:53,170 --> 00:06:59,450
+and then I'm gonna add an attribute called
+id to identify it.
+
+92
+00:06:59,450 --> 00:06:59,820
+And
+
+93
+00:06:59,820 --> 00:07:04,650
+I'm going to name this id wrapper.
+
+94
+00:07:04,650 --> 00:07:08,120
+And I can go ahead and name this whatever
+I want, just like I
+
+95
+00:07:08,120 --> 00:07:10,600
+can type anything into an alt attribute,
+
+96
+00:07:10,600 --> 00:07:14,620
+or anything into a source or href
+attribute.
+
+97
+00:07:14,620 --> 00:07:19,570
+So I've called this div wrapper, and an id
+attribute will
+
+98
+00:07:19,570 --> 00:07:25,190
+uniquely identify elements on the page.
+So now if we save this and
+
+99
+00:07:25,190 --> 00:07:29,970
+switch over to our CSS, we can go ahead
+and type a
+
+100
+00:07:29,970 --> 00:07:34,940
+hash or a pound symbol, followed by the
+name of the id.
+
+101
+00:07:34,940 --> 00:07:38,860
+So we've called it wrapper, and then we
+can go ahead and open up
+
+102
+00:07:38,860 --> 00:07:43,370
+our curly braces, and that's going to
+select that div that we just created.
+

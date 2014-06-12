@@ -1,0 +1,747 @@
+1
+00:00:00,000 --> 00:00:04,684
+[MUSIC]
+
+2
+00:00:04,684 --> 00:00:08,390
+I'm sure you're eager to start writing
+your own CSS.
+
+3
+00:00:08,390 --> 00:00:11,490
+At this point, our website just looks very
+plain.
+
+4
+00:00:11,490 --> 00:00:14,500
+However, it will be much easier for us to
+learn how
+
+5
+00:00:14,500 --> 00:00:18,780
+to use CSS if we get a little bit of
+background first.
+
+6
+00:00:18,780 --> 00:00:23,190
+CSS is an initialism that stands for
+Cascading Style Sheets.
+
+7
+00:00:24,310 --> 00:00:27,950
+The style sheet portion of this term is
+obvious.
+
+8
+00:00:27,950 --> 00:00:30,190
+It just means a document that describes
+
+9
+00:00:30,190 --> 00:00:32,540
+the visual look of a webpage.
+
+10
+00:00:32,540 --> 00:00:37,650
+The cascading portion of this term is the
+important lesson here.
+
+11
+00:00:37,650 --> 00:00:44,030
+Each CSS rule has the potential to
+override or cancel out previous rules.
+
+12
+00:00:44,030 --> 00:00:45,970
+Let's take a look at a simple example.
+
+13
+00:00:47,090 --> 00:00:50,330
+I'm going to add some style tags to our
+HTML.
+
+14
+00:00:50,330 --> 00:00:56,370
+We'll delete these later on and use an
+external style sheet instead.
+
+15
+00:00:56,370 --> 00:01:00,080
+This is just for the purposes of this
+example.
+
+16
+00:01:00,080 --> 00:01:03,340
+So, inside of my head, just after the line
+
+17
+00:01:03,340 --> 00:01:08,290
+for normalize.css I'm going to open up
+some style tags.
+
+18
+00:01:08,290 --> 00:01:15,060
+And inside, I'm going to type the element
+selector footer, open up some curly braces
+
+19
+00:01:15,060 --> 00:01:20,610
+and inside I'm going to type the color
+property followed by the value green.
+
+20
+00:01:20,610 --> 00:01:21,360
+So,
+
+21
+00:01:21,360 --> 00:01:24,500
+if you're following along, go ahead and
+type that in.
+
+22
+00:01:25,660 --> 00:01:30,270
+And, we'll go over each part of the syntax
+momentarily.
+
+23
+00:01:30,270 --> 00:01:33,320
+But for now, all you need to know is that
+this piece
+
+24
+00:01:33,320 --> 00:01:39,220
+of CSS code will change the color of our
+footer text to green.
+
+25
+00:01:39,220 --> 00:01:44,040
+So, let's go ahead and save this.
+Open up our preview.
+
+26
+00:01:44,040 --> 00:01:47,900
+Refresh the page and
+
+27
+00:01:47,900 --> 00:01:49,830
+we'll scroll down to the bottom.
+
+28
+00:01:51,020 --> 00:01:56,910
+And as you can see, the text here in our
+footer is now green.
+
+29
+00:01:58,070 --> 00:02:03,130
+Now, let's go back to our code and right
+underneath.
+
+30
+00:02:03,130 --> 00:02:08,710
+Let's add another piece of CSS, and we'll
+select our footer again.
+
+31
+00:02:10,810 --> 00:02:18,990
+And we'll do the same thing, only this
+time, we'll set the text color to orange.
+
+32
+00:02:18,990 --> 00:02:24,830
+Now, we have two CSS rules, one right
+after another.
+
+33
+00:02:24,830 --> 00:02:28,080
+The first one changes the paragraph text
+to green
+
+34
+00:02:28,080 --> 00:02:32,240
+and the second one changes the paragraph
+to orange.
+
+35
+00:02:32,240 --> 00:02:35,850
+So then will the text be green?
+Because after
+
+36
+00:02:35,850 --> 00:02:41,640
+all that's the first rule that we applied.
+Or will the text be orange?
+
+37
+00:02:41,640 --> 00:02:44,310
+Let's refresh and find out.
+
+38
+00:02:44,310 --> 00:02:47,540
+So I'm going to go back here to my
+preview.
+
+39
+00:02:47,540 --> 00:02:48,890
+Refresh the page.
+
+40
+00:02:48,890 --> 00:02:54,040
+And as you can see our footer text is now
+orange.
+
+41
+00:02:54,040 --> 00:03:00,320
+That's because the second rule has
+overwritten the first rule.
+
+42
+00:03:00,320 --> 00:03:01,250
+Because it comes
+
+43
+00:03:01,250 --> 00:03:02,930
+later on in the code.
+
+44
+00:03:03,970 --> 00:03:07,700
+Maybe this seems obvious, but as we code
+up lots of CSS,
+
+45
+00:03:07,700 --> 00:03:12,900
+it's very important to keep this
+fundamental cascading rule set in mind.
+
+46
+00:03:12,900 --> 00:03:17,750
+Sometimes it can cause strange problems
+that are very difficult to resolve.
+
+47
+00:03:17,750 --> 00:03:21,080
+But if you're very careful about
+understanding how
+
+48
+00:03:21,080 --> 00:03:25,050
+your CSS cascades, then it will be much
+easier.
+
+49
+00:03:25,050 --> 00:03:26,330
+In fact, as we
+
+50
+00:03:26,330 --> 00:03:29,620
+build our project, There will be many
+instances where
+
+51
+00:03:29,620 --> 00:03:33,880
+we use the cascading nature of CSS to our
+advantage.
+
+52
+00:03:33,880 --> 00:03:38,030
+We've already discussed the syntax of CSS
+in previous videos,
+
+53
+00:03:38,030 --> 00:03:42,130
+but it's important that the syntax becomes
+second nature to you.
+
+54
+00:03:42,130 --> 00:03:43,420
+So let's review again.
+
+55
+00:03:44,760 --> 00:03:51,200
+Now I'm going to remove this second rule,
+and just focus on one rule at a time.
+
+56
+00:03:52,210 --> 00:03:57,370
+This entire piece of code, the element
+selector, the property, the
+
+57
+00:03:57,370 --> 00:04:03,340
+value, the curly braces.
+All of this is called a rule.
+
+58
+00:04:03,340 --> 00:04:08,110
+We will create many CSS rules in our
+project.
+
+59
+00:04:08,110 --> 00:04:12,660
+The first portion of this rule that says
+footer is
+
+60
+00:04:12,660 --> 00:04:17,500
+called a selector because it tells the
+browser which element
+
+61
+00:04:17,500 --> 00:04:20,460
+on the page we want to apply our styling
+to.
+
+62
+00:04:21,600 --> 00:04:25,940
+This particular selector is called an
+element selector, because
+
+63
+00:04:25,940 --> 00:04:30,030
+it's selecting based on the name of the
+element.
+
+64
+00:04:30,030 --> 00:04:33,630
+And in this case, our element is named
+footer.
+
+65
+00:04:34,820 --> 00:04:37,950
+There are many other types of selectors
+that can narrow
+
+66
+00:04:37,950 --> 00:04:43,380
+down our styling to more specific parts of
+the page.
+
+67
+00:04:43,380 --> 00:04:48,180
+We'll learn about lots of selectors
+throughout the course of this project.
+
+68
+00:04:48,180 --> 00:04:53,970
+Next are the curly braces which
+encapsulate which kinds of styling
+
+69
+00:04:53,970 --> 00:04:59,040
+we want to be applied to whatever has been
+selected in our selector.
+
+70
+00:05:00,210 --> 00:05:05,000
+Inside of our curly braces, we have a line
+of CSS.
+
+71
+00:05:05,000 --> 00:05:09,050
+And this entire line is called a
+declaration
+
+72
+00:05:09,050 --> 00:05:11,960
+because we're basically declaring or
+saying that
+
+73
+00:05:11,960 --> 00:05:15,430
+we want some kind of styling applied.
+
+74
+00:05:15,430 --> 00:05:21,970
+A CSS rule could include multiple
+declarations.
+
+75
+00:05:21,970 --> 00:05:25,630
+But in this case we have just one the
+first
+
+76
+00:05:25,630 --> 00:05:31,460
+part of the declaration right here is
+called a property.
+
+77
+00:05:31,460 --> 00:05:34,340
+In this case we're using the color
+property
+
+78
+00:05:34,340 --> 00:05:41,100
+which changes the color of text after the
+property is a colon
+
+79
+00:05:41,100 --> 00:05:46,670
+and then a value followed by a semicolon
+which
+
+80
+00:05:46,670 --> 00:05:52,410
+ends the declaration.
+The value in this case is green.
+
+81
+00:05:52,410 --> 00:05:58,270
+And once again you can go ahead and hover
+over a color in workspaces.
+
+82
+00:05:58,270 --> 00:05:59,590
+To see a preview
+
+83
+00:05:59,590 --> 00:06:04,090
+of what that color looks like.
+So let's review backwards.
+
+84
+00:06:04,090 --> 00:06:09,680
+We have a property and value pair here
+which makes a declaration.
+
+85
+00:06:09,680 --> 00:06:15,380
+We can have several of these declarations
+that live inside of these curly braces.
+
+86
+00:06:15,380 --> 00:06:19,280
+The curly braces encapsulate which
+declarations
+
+87
+00:06:19,280 --> 00:06:21,980
+should be applied to the selector.
+
+88
+00:06:21,980 --> 00:06:25,620
+All of that stuff together is called a
+rule.
+
+89
+00:06:25,620 --> 00:06:29,460
+As we use these terms in practice, they'll
+become more familiar to you.
+
+90
+00:06:29,460 --> 00:06:32,060
+This is important because it will be
+easier for
+
+91
+00:06:32,060 --> 00:06:35,830
+you to listen and discuss with other
+designers and developers.
+
+92
+00:06:35,830 --> 00:06:38,900
+Let's try a few more examples before we
+jump into a quiz.
+
+93
+00:06:40,420 --> 00:06:46,030
+Let's jump inside of our rule here and add
+another declaration
+
+94
+00:06:46,030 --> 00:06:50,980
+that will change the background color.
+This is different from the text
+
+95
+00:06:50,980 --> 00:06:57,510
+color and we'll mean to use another CSS
+property, so let's try it out.
+
+96
+00:06:57,510 --> 00:07:01,880
+I'm going to use the background-color
+property.
+
+97
+00:07:01,880 --> 00:07:04,950
+And you'll notice that once again,
+Workspaces uses
+
+98
+00:07:04,950 --> 00:07:08,480
+code completion to suggest a property to
+us.
+
+99
+00:07:09,530 --> 00:07:15,000
+And then, it also uses code completion to
+suggest a value.
+
+100
+00:07:15,000 --> 00:07:16,460
+However there are other values,
+
+101
+00:07:16,460 --> 00:07:19,070
+other than the ones listed here that we
+can type.
+
+102
+00:07:19,070 --> 00:07:22,670
+I'm going to change our background color
+to orange.
+
+103
+00:07:22,670 --> 00:07:27,950
+And then I'm going to change the text
+color to white.
+
+104
+00:07:27,950 --> 00:07:31,480
+Now of course our webpage has a white
+background.
+
+105
+00:07:31,480 --> 00:07:34,020
+So in order to see the text, we'll
+
+106
+00:07:34,020 --> 00:07:37,740
+need a separate background color like
+we've done here.
+
+107
+00:07:38,770 --> 00:07:42,050
+Now, let's go ahead and save and
+
+108
+00:07:42,050 --> 00:07:44,100
+refresh our preview here.
+
+109
+00:07:45,850 --> 00:07:49,890
+And down at the bottom you can see that we
+now have an orange background
+
+110
+00:07:49,890 --> 00:07:55,730
+color for the entirety of the footer,
+which spans the entire width of the page.
+
+111
+00:07:55,730 --> 00:07:58,490
+And then the text color is now white.
+
+112
+00:07:59,590 --> 00:08:05,250
+But, what if we wanted to apply this to
+another element instead of the footer?
+
+113
+00:08:05,250 --> 00:08:07,130
+Let's say that this is what we wanted
+
+114
+00:08:07,130 --> 00:08:11,960
+our navigation to look like.
+Well, we could go back to our code
+
+115
+00:08:11,960 --> 00:08:16,980
+and change the selector from footer to nav
+
+116
+00:08:16,980 --> 00:08:21,680
+because we have our nav element further
+down the page, right here.
+
+117
+00:08:22,710 --> 00:08:32,710
+So, let's go ahead and save, go back to
+our preview, and scroll to the top,
+
+118
+00:08:32,710 --> 00:08:38,540
+and when we refresh the page, you can see
+that this styling has now been applied
+
+119
+00:08:38,540 --> 00:08:43,910
+to our navigation.
+And has been removed from our footer.
+
+120
+00:08:45,590 --> 00:08:50,230
+Now, the background color is orange but,
+as you can see,
+
+121
+00:08:50,230 --> 00:08:55,650
+the links are still the default color that
+the browser has applied.
+
+122
+00:08:55,650 --> 00:08:58,430
+So, any links that have already been
+clicked
+
+123
+00:08:58,430 --> 00:09:04,170
+are purple, and any links that have not
+been clicked are blue.
+
+124
+00:09:04,170 --> 00:09:08,330
+So why didn't this text change to white?
+
+125
+00:09:08,330 --> 00:09:13,750
+Well, this is a problem that's called
+selector specificity.
+
+126
+00:09:13,750 --> 00:09:15,990
+In this case, the browser is applying a
+
+127
+00:09:15,990 --> 00:09:21,940
+default selector that's lightly more
+specific than ours.
+
+128
+00:09:21,940 --> 00:09:23,460
+We're just saying that we want to
+
+129
+00:09:23,460 --> 00:09:28,370
+apply this to the navigation.
+But the browser has gotten more specific
+
+130
+00:09:28,370 --> 00:09:33,240
+and styled the anchor tags.
+So, we need to, in
+
+131
+00:09:33,240 --> 00:09:38,640
+turn, get even more specific than the
+browser to describe what we mean here.
+
+132
+00:09:39,810 --> 00:09:43,640
+So, let's go ahead and jump back into our
+code.
+
+133
+00:09:43,640 --> 00:09:50,350
+And let's modify the selector int what's
+called a descendant selector.
+
+134
+00:09:50,350 --> 00:09:55,600
+We want to specifically select the anchor
+elements that are inside of the nav.
+
+135
+00:09:55,600 --> 00:10:00,860
+So, here we have nav then an unordered
+list.
+
+136
+00:10:00,860 --> 00:10:06,200
+A list item, and then an anchor element.
+
+137
+00:10:06,200 --> 00:10:09,790
+However, we don't need to include these
+other elements, we
+
+138
+00:10:09,790 --> 00:10:14,420
+can just jump straight down to the anchor
+from our nav.
+
+139
+00:10:14,420 --> 00:10:15,400
+So what does that
+
+140
+00:10:15,400 --> 00:10:16,050
+look like?
+
+141
+00:10:16,050 --> 00:10:20,150
+Well we have our nav here, that's already
+selected.
+
+142
+00:10:20,150 --> 00:10:22,940
+And right now this is an element selector.
+
+143
+00:10:22,940 --> 00:10:28,190
+To make this a descendant selector we
+follow up nav with a space, and
+
+144
+00:10:28,190 --> 00:10:33,250
+then type a so this looks very similar to
+our element
+
+145
+00:10:33,250 --> 00:10:38,780
+selector, but now this is a new selector
+that will select the anchor elements.
+
+146
+00:10:38,780 --> 00:10:40,970
+Inside of our nav
+
+147
+00:10:40,970 --> 00:10:47,230
+so it's going down the tree here in our
+HTML from nav down to anchor.
+
+148
+00:10:47,230 --> 00:10:49,940
+So let's go ahead and save the page.
+
+149
+00:10:51,500 --> 00:10:54,339
+And refresh here to see what this looks
+like.
+
+150
+00:10:55,420 --> 00:11:00,990
+As you can see our styling has now been
+applied to the individual links
+
+151
+00:11:00,990 --> 00:11:06,030
+inside of our navigation.
+So, no longer is the nav element what's
+
+152
+00:11:06,030 --> 00:11:11,640
+being styled here, we're actually
+selecting the specific anchor elements.
+
+153
+00:11:11,640 --> 00:11:16,580
+So, the nav background has now defaulted
+back to white.
+
+154
+00:11:16,580 --> 00:11:22,910
+But our nav links now have that orange
+background and the white text color.
+
+155
+00:11:22,910 --> 00:11:27,940
+All right, I think we've done enough
+practice exercises to get us started.
+
+156
+00:11:27,940 --> 00:11:31,140
+We're ready to jump into coding the CSS
+for our project.
+
