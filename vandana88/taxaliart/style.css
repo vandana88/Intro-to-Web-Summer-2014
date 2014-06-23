@@ -1,0 +1,300 @@
+/*
+Theme Name: Gary Taxali Fine Art
+Theme URI: http://taxali.com/
+Description: custom theme for Gary Taxali Fine Art and ported to WP by Derek J. Kinsman.
+
+	DEV: 		Derek J. Kinsman	
+
+Author: Derek J. Kinsman 
+Author URI: http://derekkinsman.com/
+Version: 0.1
+Tags: custom
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-y: scroll;
+	font-weight:  100;
+}
+
+body{
+	font-family: 'Roboto', sans-serif; !important; 
+}
+
+body.home {
+	overflow: hidden;
+}
+
+.uppercase > h1, .uppercase > div > ul > li > a { text-transform: uppercase; }
+.uppercase > div > ul > li > ul > li > a { text-transform: none; }
+
+.attachment-event-thumb {
+	padding: 0 15px 15px 0;
+}
+
+.cursor:hover {
+	color: #333;
+}
+
+.prev:after {
+	content: " - ";
+}
+
+.controllers {
+	margin-bottom: 17px;
+}
+
+.clearfix:before, .clearfix:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+}
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* PORTED FROM OLD SITE */
+/* Basic CSS */
+body {background-color:#FFFFFF;margin:0px;font-size:22px;text-align:left;color:#666;}
+a {color:#000000;}
+a:link {color:#000000;}
+a:hover {color:#666666;}
+h2 {margin-top:0px;font-size:0.7em;color:#888888;}
+h3 {margin-top:30px;font-size:1em;color:#888888;}
+.red {color:red;}
+.small {font-size:0.8em;}
+.right {float:right;}
+.center {text-align:center;}
+.normal {color:#666666;}
+.bold {font-weight:bold;}
+.larger {font-size:0.8em;}
+.hidden {display:none;}
+p {color:#666666;padding-left:10px;}
+.home #mainC p {padding-left: 0; text-align: center;}
+img.padding {margin-top:25px;margin-bottom:10px;}
+img.toppad {margin-top:15px;}
+
+/* Shared CSS */
+html, body {padding: 0; margin: 0; border: 0; background:#e7e7e7;}
+html, body {height:100%;/* needed for container min-height */	text-align:center;}
+body.main {width:100%;height:100%;background-image:url(_img/invite.jpg); x-repeat:no-repeat;y-repeat:no-repeat;}
+#imain a {position:absolute;left:0;top:0;z-index:9999;background-color:transparent;width:100%; height:100%;text-decoration:none;}
+div#mainC {position:relative;margin-left:auto;margin-right:auto;width:675px;/*min-height:80%*/;margin-top:100px;margin-bottom:20px;text-align:left;}
+div#mainmail {position:relative;margin-left:auto;margin-right:auto;width:700px;min-height:80%;margin-top:10%;text-align:left;}
+div#boxleft {float:left;width:300px;margin-top:50px;}
+div#boxright {float:right;width:350px;padding:0px;margin:50px 0 0 0px;}
+div#main {position:relative;width:750px;height:100%;}
+div#center_main {text-align:center;height:100%;}
+div#centered { border:0;background-color: hite;height:50%;width:50%;position:absolute;left:25%;top:25%;color:black;}	
+div#footer {/*position:absolute;width:100%;bottom:0; background:#fff;*/ margin-top: 50px;}
+div#footer p {	padding:1em;margin:0;	}
+
+.simple-social-icons ul {
+  margin: auto !important;
+  width: 1000px;
+}
+
+#footer .simple-social-icons ul li a {
+  background-color: #fff !important;
+  color: #333 !important;
+}
+#footer .simple-social-icons ul li a:hover {
+  background-color: #fff !important;
+  color: #666 !important;
+}
+/*
+#menu-main-menu {height:20px;background: url(_img/menu_2009.gif);background-repeat:no-repeat;padding:0; position:relative;top:20px;}
+#menu-main-menu li {margin:0;padding:0;list-style:none;position:absolute; top: 0;}
+#menu-main-menu li.drop, #menu-main-menu a {display:block;text-decoration:none;padding-left:0px;}
+div#menu {margin:0px auto;width:750px;height:20px; position:relative; z-index:100;}
+#menu ul li a, .menu ul li a:visited {display:block;height:20px;  border:1px solid #fff; overflow:hidden;}
+#menu ul li.drop a, .menu ul li.drop a:visited {overflow:hidden;}
+#menu ul {padding:0; margin:0; list-style: none;}
+#menu ul li.drop {float:left; position:relative;height:20px;line-height:13px;text-align:left; font-size:10px;background-color:#fff;}
+#menu ul li ul {display: none;}
+#menu ul li:hover a {}
+#menu ul li:hover ul {display:block; position:absolute; top:22px; left:0;}
+#menu ul li:hover ul li a.hide {}
+#menu ul li:hover ul li:hover a.hide {}
+#menu ul li:hover ul li ul {display: none;}
+#menu ul li:hover ul li a {display:block; background:#fff; color:#000;width:105px;}
+#menu ul li:hover ul li a:hover {background:#e7e7e7; color:#000;}
+#menu ul li:hover ul li:hover ul {display:block; position:absolute; left:105px; top:0;}
+li.panelhome {left:0; width:80px;}
+li.panelworks {left: 80px; width: 70px;}
+li.panelpress{left: 150px; width: 70px;}
+li.panelshows {left: 220px; width: 70px;}
+li.panelbio {left: 290px; width: 55px;}
+li.panelnews {left: 345px; width: 70px;}
+li.panellinks {left: 415px; width: 70px;}
+li.panelcontact {left: 485px; width:75px;}
+li.panelmail {left: 560px; width: 120px;}
+li.panelshop {left: 680px; width: 80px;}
+li.panelhome a:hover, li.panelhome.current-menu-item {background:transparent url(_img/menu_2009.gif) 0 -20px no-repeat;}
+li.panelworks a:hover, li.panelworks.current-menu-item  {background:transparent url(_img/menu_2009.gif) -80px -20px no-repeat;}
+li.panelpress a:hover, li.panelpress.current-menu-item {background:transparent url(_img/menu_2009.gif) -150px -20px no-repeat;}
+li.panelshows a:hover, li.panelshows.current-menu-item {background:transparent url(_img/menu_2009.gif) -220px -20px no-repeat;}
+li.panelbio a:hover, li.panelbio.current-menu-item {background:transparent url(_img/menu_2009.gif) -290px -20px no-repeat;}
+li.panelnews a:hover, li.panelnews.current-menu-item  {background:transparent url(_img/menu_2009.gif) -345px -20px no-repeat;F}
+li.panellinks a:hover, li.panellinks.current-menu-item  {background:transparent url(_img/menu_2009.gif) -415px -20px no-repeat;}
+li.panelcontact a:hover, li.panelcontact.current-menu-item {background:transparent url(_img/menu_2009.gif) -485px -20px no-repeat;}
+li.panelmail a:hover, li.panelmail.current-menu-item {background:transparent url(_img/menu_2009.gif) -560px -20px no-repeat;}
+li.panelshop a:hover {background:transparent url(_img/menu_2009.gif) -680px -20px no-repeat;}
+#menu-main-menu li.panelworks ul.sub-menu  li.drop  {height:auto;}
+#menu-main-menu li.panelworks ul.sub-menu  li.drop a {height:auto;border:1px solid #e7e7e7;padding:3px;}
+*/
+
+/* MAIN MENU */
+.menu-main-menu-container {
+	margin: 0 auto;
+	width: 675px;
+}
+
+#menu-main-menu:before, #menu-main-menu:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+}
+#menu-main-menu:after { clear: both; }
+#menu-main-menu { zoom: 1; }
+
+#menu-main-menu {
+	 
+	font-size: 14px;
+	margin: 0 auto;
+	font-weight:  100;
+}
+
+#menu-main-menu li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+  position: relative;
+}
+
+#menu-main-menu a { color: #000;}
+#menu-main-menu a:hover { color: #666;}
+#menu ul li a {
+	display: block;
+}
+
+#menu ul li ul {display: none; padding-top: 5px;position: absolute; top: 19px; z-index: 9999;}
+#menu ul li ul li {float: none; text-align: left;}
+#menu ul li:hover ul { display: block;}
+#menu ul li:hover ul li a.hide {}
+#menu ul li:hover ul li:hover a.hide {}
+#menu ul li:hover ul li ul {display: none;}
+#menu ul li:hover ul li a {display:block; background:#fff; color:#000;width:105px;}
+#menu ul li:hover ul li a:hover {background:#e7e7e7; color:#000;}
+#menu ul li:hover ul li:hover ul {display:block;}
+#menu-main-menu li.panelworks ul.sub-menu  li.drop  {height:auto;}
+#menu-main-menu li.panelworks ul.sub-menu  li.drop a {height:auto;border:1px solid #e7e7e7;padding:3px;}
+/* MAIN MENU */
+
+#mainC li {list-style-type:none;margin-bottom:5px;}
+ul li a, ul.center li a {color:#666666;}
+ul li a:hover, ul.center li a:hover {color:#000;}
+ul li a, ul li a:hover, ul li a:visited, ul.center a, ul.center a:hover, ul.center a:visited {text-decoration:none;}
+div.simages {}
+div.sdesc {margin-top:10px;}
+.box2 a.styled {text-decoration:none;color:#000; padding:0px 4px 0px 4px;}
+.box2 a:hover.styled {text-decoration:none;color:#555;}
+.box2 a.style #current {}
+.box2  .grey {color:#777;}
+span.hidden {display:none;}
+.sub-menu span.hidden {display:inline-block;}
+html, body {padding: 0; margin: 0; border: 0; background: #fff;}
+#container {background: #fff;margin: 0 25px;text-align:center;padding: 5px;text-align: center;}
+div.conformbg {width:355px;height:355px;border:0px;}
+form.conform .formbg {border:0px;width:355px;background:none;}
+form.conform .formbg legend {margin-left:25px;padding:0px 15px 10px 15px;height:25px;color:#888;background-color:#fff;border:0px;}
+form.conform label.name {float:left;margin-top:9px;margin-left:10px;width:111px;height:22px;color:#888;border:1px solid #fff;}
+form.conform label.name2 {float:left;margin-top:8px;margin-left:10px;width:110px;height:22px;color:#888;border:1px solid #fff;}
+form.conform input.input {float:right;width:183px;margin-top:5px;height:25px;margin-right:20px;padding:1px 5px 0 5px;background: url(_img/minput.gif);background-repeat:no-repeat;border:1px solid #fff;outline: none;}
+form.conform .txtbox {clear:both;float:left;margin:8px 0 0 7px;width:320px;height:150px;background: url(_img/tb.gif);background-repeat:no-repeat;padding:0 5px 0 5px;border:1px solid #fff;outline: none;}
+form.conform .txtbox {min-width:320px;max-width:320px;min-height:150px;max-height:150px;resize:none; /* horizontal | vertical | none */border:none;}
+.txtbox:focus, input:focus, .sendbut2.focus, .sendbut.focus {border:1px solid transparent;}	
+.required {color: red;}	
+div#float {margin-top:150px;}
+div.mformbg {background:url(_img/mform_box2.gif);background-repeat:no-repeat;width:355px;height:450px;border:0px;}
+form.mform label.name {float:left;margin-top:5px;margin-left:10px;width:111px;height:22px;color:#888;border:1px solid #fff;}
+form.mform label.name2 {float:left;margin-top:5px;margin-left:10px;width:110px;height:30px;color:#888;border:1px solid #fff;}
+form.mform label.name3 {float:left;margin-top:5px;margin-left:10px;width:110px;height:30px;color:#888;border:1px solid #fff;}
+form.mform input.input {float:right;width:183px;margin-top:5px;height:22px;margin-right:20px;padding:1px 5px 0 5px;background: url(_img/minput.gif);background-repeat:no-repeat;border:1px solid #fff;outline: none;}
+form.mform input.input2 {float:right;width:183px;margin-top:5px;height:33px;margin-right:20px;padding:1px 5px 0 5px;background: url(_img/minput.gif);background-repeat:no-repeat;border:1px solid #fff;outline: none;}
+form.mform div.input2 {float:right;margin-top:5px;height:20px;width:180px;border:1px solid #d7d7d7;}
+
+/* Standard CSS */
+div#content {min-height:100%;}
+div#cblink {margin-right:100px;}
+.menu ul li a, .menu ul li a:visited {display:block; text-decoration:none; width:auto; height:20px; padding:0px 10px 0px 10px;color:#A9A9A9; border:1px solid #fff;  line-height:15px; font-size:12px; overflow:hidden;}
+form.conform .sendbut {clear:both;float:left;margin:5px 0px 0px 240px;width:75px;height:30px;background: url(_img/send.gif);background-repeat:no-repeat;border:1px solid #fff;color:#666;text-align:center;}
+form.mform {padding:25px 0px 0px 15px;}
+form.mform div.input2 {margin-right:30px;}
+form.mform select.input {float:right;margin-top:5px;margin-bottom:5px;margin-right:25px;height:22px;width:185px;border:1px solid #d7d7d7;}
+form.mform .sendbut2 {clear:both;float:left;margin:0px 0px 0px 230px;width:75px;height:30px;background: url(_img/send.gif);background-repeat:no-repeat;border:1px solid #fff;color:#666;text-align:center;}
+.required {color:#b03060;}
+
+/* Win IE CSS */
+.ie6 #outer { position: absolute;left:0px; width: 100%;height:90%; overflow: visible;}
+.ie6 #middle {position: absolute; top: 50%; width: 100%; text-align: center;left:0px;} /* for explorer only*/
+.ie6 #middle {width: 100%; text-align: center;}
+.ie6 #inner {position: relative; top: -50%; text-align: left; width:100%;text-align: center;} /* for explorer only */
+.ie6 #inner { margin-left: auto; margin-right: auto;} /* for all browsers*/
+.ie6 #inner {text-align: center;}
+.ie6 #menu ul li a, .ie6 #menu ul li a:visited {overflow:hidden;}
+.ie6 #menu ul li a.hide, .ie6 #menu ul li a:visited.hide {display:none;}
+.ie6 #menu ul li a:hover ul li a.hide {display:none;}
+.ie6 #menu ul li a:hover {}
+.ie6 #menu ul li a:hover ul {display:block; position:absolute; top:22px; left:0; width:105px;}
+.ie6 #menu ul li a:hover ul li a  {text-align:left;display:block;  width:105px;height:auto;padding:.5em;}
+.ie6 #menu ul li a:hover ul li a.sub {}
+.ie6 #menu ul li a:hover ul li a {display:block; }
+.ie6 #menu ul li a:hover ul li a ul {visibility:hidden;}
+.ie6 #menu ul li a:hover ul li a { color:#000;}
+.ie6 #menu ul li a:hover ul li a:hover {background:#e7e7e7; color:#000;}/*sub*/
+.ie6 #menu ul li a:hover ul li a:hover ul {visibility:visible; position:absolute; left:88px; top:0;}
+.ie6 #menu ul li a:hover ul li a:hover ul.left {left:-105px;}
+.ie6 #nb {position:relative;text-align:center;margin-left:auto;margin-right:auto;}
+.ie6 form.conform .sendbut  {cursor:hand;}
+.ie6 form.conform .sendbut {clear:both;float:left;padding:0 5px 8px 0px;margin:0px 0 0 215px;width:85px;height:40px;background: url(_img/send.gif);background-repeat:no-repeat;border:1px solid #fff;color:#666;text-align:center;}
+.ie6 .required {color:#b03060;}
+.ie6 form.mform {width:355px;padding:25px 15px 0px 8px;}
+.ie6 form.mform div.input2 {margin-right:15px;}
+.ie6 form.mform .sendbut2 {clear:both;float:left;padding:0 5px 8px 0px;margin:25px 0 0 240px;width:85px;height:40px;background: url(_img/send.gif);background-repeat:no-repeat;border:1px solid #fff;color:#666;text-align:center;}
+.ie6 .required {color:#b03060;}
+.ie6 #fixedbox {position:absolute;left: 50%; margin-left:-400px;bottom:25px; font-weight:bold;/* stick to bottom */background:#fff;width:800px;height:18px;}
+.ie6 .box1 {display:block;width:21px;height:18px;background:url(_img/arrowback.gif) 0px 0px no-repeat;display: -moz-inline-box; /* For FF<3 */-moz-box-orient: vertical; /* For FF<3 */vertical-align: middle; /* explicitly declare your preference as Moz inline-box auto aligns to top */text-align: left; /* to left align text within divs when container has been set to center */}
+.ie6 .box2 {display: -moz-inline-box; /* For FF<3 */-moz-box-orient: vertical; /* For FF<3 */vertical-align: middle; /* explicitly declare your preference as Moz inline-box auto aligns to top */text-align: left; /* to left align text within divs when container has been set to center */}
+.ie6 .box3 {display:block;width:21px;height:18px;background:url(_img/arrownext.gif) 0px 0px no-repeat;display: -moz-inline-box; /* For FF<3 */-moz-box-orient: vertical; /* For FF<3 */vertical-align: middle; /* explicitly declare your preference as Moz inline-box auto aligns to top */text-align: left; /* to left align text within divs when container has been set to center */}
+.ie6 .box1, .ie6 .box3 {margin: 0px;border: 1px solid #fff;display: -moz-inline-box; /* For FF<3 */-moz-box-orient: vertical; /* For FF<3 */display: inline-block; /* IE <8 needs this tripped back to display: inline; to make it work on block elements - see conditional below */width: 21px; /* now optional */vertical-align: middle; /* explicitly declare your preference as Moz inline-box auto aligns to top */text-align: left; /* to left align text within divs when container has been set to center */}
+.ie6 .box2 {margin: 0px;border: 1px solid #fff;display: -moz-inline-box; /* For FF<3 */-moz-box-orient: vertical; /* For FF<3 */display: inline-block; /* IE <8 needs this tripped back to display: inline; to make it work on block elements - see conditional below */vertical-align: middle; /* explicitly declare your preference as Moz inline-box auto aligns to top */text-align: left; /* to left align text within divs when container has been set to center */}
+.ie6 .box1, .ie6 .box2, .ie6 .box2 a, .ie6 .box3 {display: inline;}
+.ie6 ul {margin-left:15px;}
+.ie6 form.conform label.name {float:left;margin-top:9px;margin-left:25px;width:111px;height:22px;color:#888;border:1px solid #fff;}
+.ie6 form.conform label.name2 {float:left;margin-top:8px;margin-left:25px;width:110px;height:22px;color:#888;border:1px solid #fff;}
+.ie6 form.conform {border:0px;width:355px;background:none;}
+.ie6 form.conform .txtbox {clear:both;float:left;margin:8px 0 0 15px;width:320px;height:150px;background: url(_img/tb.gif);background-repeat:no-repeat;padding:0 5px 0 5px;border:1px solid #fff;outline: none;}
+.ie6 form.conform .sendbut  {cursor:hand;}
+.ie6 form.conform .sendbut {clear:both;float:left;padding:0 5px 8px 0px;margin:0px 0 0 240px;width:85px;height:35px;background: url(_img/send.gif);background-repeat:no-repeat;border:0px;color:#666;text-align:center;}
+.ie6 .required {color:#b03060;}
+.ie6 form.mform {width:355px;padding:25px 15px 0px 8px;}
+.ie6 form.mform div.input2 {margin-right:15px;}
+.ie6 form.mform select.input {float:right;margin-top:5px;margin-bottom:15px;margin-right:31px;height:20px;width:185px;border:1px solid #d7d7d7;}
+.ie6 form.mform .sendbut2 {clear:both;float:left;padding:0 7px 6px 0px;margin:5px 0 0 240px;width:85px;height:35px;background: url(_img/send.gif);background-repeat:no-repeat;border:0px;color:#666;text-align:center;}
+.ie6 .required {color:#b03060;}
+
+/* Win IE 7 CSS */
+.ie7 .box  {display: inline-block; /* IE <8 needs this tripped back to display: inline; to make it work on block elements - see conditional below */}
+.ie7 form.mform div.input2 {margin-right:30px;}
+.ie7 form.conform .txtbox {clear:both;float:left;margin:8px 0 0 15px;width:320px;height:150px;background: url(_img/tb.gif);background-repeat:no-repeat;padding:0 5px 0 5px;border:1px solid #fff;outline: none;}
+.ie7 form.conform .sendbut {clear:both;float:left;padding:0 5px 8px 0px;margin:0px 0 0 250px;width:85px;height:35px;background: url(_img/send.gif);background-repeat:no-repeat;border:0px;color:#666;text-align:center;}
+.ie7 .required {color:#b03060;}
+.ie7 form.mform .sendbut2 {clear:both;float:left;padding:0 7px 6px 0px;margin:50px 0 0 240px;width:85px;height:35px;background: url(_img/send.gif);background-repeat:no-repeat;border:0px;color:#666;text-align:center;}
+.ie7 box2 a.styled { font-size:0.8em;}
+.ie7 #fixedbox {position:absolute;left: 50%; margin-left:-400px;bottom:25px; font-weight:bold;/* stick to bottom */background:#fff;width:800px;height:18px;}
+.ie7 div.sdesc {font-size:0.7em;}
