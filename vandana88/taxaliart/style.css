@@ -48,6 +48,10 @@ body.home {
 	margin-bottom: 17px;
 }
 
+.smaller {
+	font-size: 10px; 
+}
+
 .clearfix:before, .clearfix:after {
         content: "\0020";
         display: block;
