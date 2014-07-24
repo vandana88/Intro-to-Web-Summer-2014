@@ -1,0 +1,84 @@
+ <!doctype html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Week 5 Google Maps</title>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9rABaf_KBbLEY9UI2wiwiOZ8SeFoAZBE&sensor=false"></script>
+		<script>
+
+
+	<script type ="text/javascript">
+
+
+		function add(numberA,numberB){
+		var results;
+		results = numberA + numberB;
+		return "The answer is " + results; 
+	}
+
+	console.log( add(aNumber,4) )
+
+		$(document).ready(function(){
+			map = new google.maps.Map(document.getElementById("map-canvas"),{
+				zoom : 16; 
+		}); 
+		google.maps.event.addListener(map, 'click', function(event){
+				searchPhotos(event.latLng); 
+
+	}); 
+
+	navigator.geolocation.getCurrentPosition(function(position) {
+		searchPhotos(new googlemaps.LatLng(position.coords.latitude, position.coords.longitude)){
+
+	}); 
+
+	function searchPhotos(location){
+		var client_id =  "a8d594e2697e407e91b40c4b4ce189de", 
+		openInfowindow; 
+
+		$.ajax({
+			type: "GET",
+			dataType: "jsonp",
+			cache: false,
+			url: "https://api.instagram.com/v1/media/search?distance=100&lat=" + location.lat() + "&lng=" + loction.lng() + "$client_id=" + client_id,
+			success:  function(response){
+				photos.data.forEAch(function(photo){
+					var photoLocation = new google.maps.LatLng(photo.location.latitude,photo.location.longitude); 
+					var photoMaker = new google.map.Marker({
+						position:  photoLocation, 
+						map:  map 
+					});
+ var infoWindow = new google.maps.InfoWindow({
+ 		content :  ""<img src='" + photo.images.low_resolution.url +' " />""
+ })
+
+				}); 
+
+google.maps.event.addListener(photoMarker, 'click', function(){
+	if(openInfowindow){
+		openInfowindow.close();
+	}
+}
+		})
+	});
+ //ajax
+
+				
+			// instagram stuff happens in here, we're getting there.
+
+			map.setCenter(location)
+
+
+	</script>
+
+<style type="text/css">
+body.html{height:100%;margin;0;padding:0;}
+#map-canvas{height:100%}
+</style>
+
+</head>
+<body>
+<div id='map-canvas'></div>
+</body>
+</html>

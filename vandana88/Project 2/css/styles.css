@@ -43,16 +43,14 @@ body{
 
 .logo {
 
-	width: 75%; 
-	height:  75%; 
-	border-radius:20px;
-	font-size: 16px;
-	text-transform: uppercase;
-	padding-left:  105px;
-	padding-top:  15px;
+width: 80px;
+height: 80px;
+border-radius: 20px;
+font-size: 16px;
+text-transform: uppercase;
+margin-left: 10px;
+margin-top: 15px;
 }
- 
-
 
 
 .social-icon{
